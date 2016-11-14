@@ -1,0 +1,174 @@
+body {
+    background-color:#FFFFFF;
+}
+#header {
+  background-color:#1567df;
+  color:#1567df;
+  padding: 5px;
+  position:relative;             /* ADDED */
+}
+
+.headerText{                     /* CHANGED */
+  position:absolute;
+  font-family: "Arial";
+  bottom:0;
+  left:200px;
+  line-height:4px;
+}
+#header:after{                   /* ADDED */
+  content:"";
+  display: table;
+  clear:both;
+}
+.logo{
+  position: relative;
+  float:left;                    /* ADDED */
+  left: 10px;
+  top:5px;
+
+
+}
+h1 {
+	font-family: "Helvetica Neue", Times, serif;
+	font-size: 40px;
+	color: white;
+}
+
+h4 {
+  font-family: "HelveticaNeue-Light"; 
+}
+
+h6 {
+  font-family: "HelveticaNeue-Light";
+}
+.centericon{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 360px;
+   height: 100px;
+   margin-top: -50px; /* Half the height */
+   margin-left: -180px; /* Half the width */
+}
+
+.centerloader{
+   position: absolute;
+   top: 70%;
+   left: 50%;
+   width: 158px;
+   height: 18px;
+   margin-top: -9px; /* Half the height */
+   margin-left: -79px; /* Half the width */
+}
+
+
+/*Start of Hamburger Menu*/
+
+body {margin:0;}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1567df;
+}
+
+ul.topnav li {float: left;}              /*hamburger link home orientation*/
+
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.topnav li a:hover {background-color: #1567df;}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;                       /*hamburger icon orientation*/
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 70px;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: right;
+  }
+}
+
+/*End of Hamburger Menu*/
+
+.box {
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+.largebox {
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 345px;
+    height: 300px;
+    
+    }    
+ 
+.sectionBox{
+    position:relative;
+    min-width:345px;
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-right:10px;
+    margin-left:10px; 
+    padding:10px;
+    background:#1567df;
+    border-radius: 5px;
+    color:white;
+    font-family: "HelveticaNeue-Light";
+}   
+#indexFooter{
+  color:white;
+  font-family: "Arial";
+  clear:both;
+  text-align:center;
+  padding:5px;
+}
+
+#footer {
+  background-color:#1567df;
+  color:white;
+  font-family: "Arial";
+  clear:both;
+  text-align:center;
+  padding:5px;
+}
