@@ -4,10 +4,7 @@
   <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-<div id="header">
-	<center><a href="home.html" class="logo"><img src="images/logoHome.png" style="width: 180px height: 50px"></a><p>
-	
-</div>
+
 
 <ul class="topnav" id="myTopnav">
   <li><a href="home.html">HOME</a></li>
@@ -19,6 +16,11 @@
     <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
   </li>
 </ul>
+
+<div id="header">
+  <a href="home.html" class="logo"><img src="images/fitItlogoText.png" style="max-width:60%; height:auto;"></a><p>
+  
+</div>
 
 <script>
 function myFunction() {
@@ -33,17 +35,17 @@ function myFunction() {
 
 
 
-<center><h4>Need some support?</h4></center>
+<center><p class="headingfont">Need some support?</p></center>
 
 
 <div class="sectionBox">
-          <h3>Support Contact Form</h3>
-          <h5>Please fill out the following form to request support for this application.</h5>
+          <p class="sectionTitle ">Support Contact Form</p>
+          <p class="paraFont">Please fill out the following form to request support for this application.</p>
           <form action="mailto:ashduggan@comcast.net" method="post" enctype="text/plain">
           Name(Optional):<br>
-          <input type="text" name="name"><br>
+          <input type="text" name="name"><br class="paraFont"><p>
           E-mail:<br>
-          <input type="text" name="mail"><br>
+          <input type="text" name="mail"><br class="paraFont"><p>
           Support Question:<br>
           <textarea name="comments" id="comments" style="width: 350px; height: 100px;">
           Please let us know what support you need. We will get back to you as soon as possible! Thank you!
