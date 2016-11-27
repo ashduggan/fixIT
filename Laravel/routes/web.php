@@ -12,5 +12,17 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+
+Route::get('/support', function(){
+    return view('support');
+});
+
+Route::get('/about', function(){
+    return view('about');
+});
+
+Route::get('/submit', function(){
+    return view('submit');
 });
