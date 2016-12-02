@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+
+<ul class="topnav" id="myTopnav">
+  <li><a class="active" href="home.html">HOME</a></li>
+  <li><a href="about.html">ABOUT</a></li>
+  <li><a href="support.html">SUPPORT</a></li>
+  <li><a href="submit.html">SUBMIT PROBLEM</a></li>
+  
+  <li class="icon">
+    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+  </li>
+</ul>
+
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+<div id="header">
+  <a href="home.html" class="logo"><img src="images/fitItlogoText.png" style="max-width:60%; height:auto;"></a><p>
+  
+</div>
+
+<center><p class="headingfont">How Can We Help You?</p>
+        <p class="paraTitle">Please select an option from below for help.</p></center>
+
+
+
+<center><div class="questionBox">
+          Insert PHP filler for icon and name  
+</div><p>
+
+<button class="button">Yes</button>
+<button class="button">No</button>
+
+<button class="button">Question Still Not Answered?</button>
+</center>
+
+
+
+
+
+<div id="footer">
+
+    <p class="footerText">Website Design &copy; Ashley Duggan</p>
+    </div>
+
+</body>
+</html>
