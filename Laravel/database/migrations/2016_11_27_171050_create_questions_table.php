@@ -20,6 +20,7 @@ class CreateQuestionsTable extends Migration
             $table->unsignedInteger('parentId')->nullable();
             $table->unsignedInteger('leftChildId')->nullable();
             $table->unsignedInteger('rightChildId')->nullable();
+            $table->integer('popularity')->default(0);
             $table->string('question');
             $table->string('suggestion')->nullable();
             $table->timestamps();

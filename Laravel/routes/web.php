@@ -26,3 +26,7 @@ Route::get('/about', function(){
 Route::get('/submit', function(){
     return view('submit');
 });
+
+Route::resource("questions" , "QuestionController", ["only" => 
+    ["show"]
+]);
