@@ -32,10 +32,11 @@
          </div>
 </div><p>
 
-<button class="button">Yes</button>
-<button class="button">No</button>
-
-<button class="button">Question Still Not Answered?</button>
+<form action="url" method="get">
+  <button class="button" formaction={{url($leftChildURL)}}>Yes</button>
+  <button class="button" formaction={{url($rightChildURL)}}>No</button>
+  <button class="button">Question Still Not Answered?</button>
+</form>
 </center>
 
 

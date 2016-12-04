@@ -5,7 +5,6 @@
 </head>
 <body>
 
-
 <ul class="topnav" id="myTopnav">
   <li><a class="active" href="{{url('/')}}">HOME</a></li>
   <li><a href="{{url('about')}}">ABOUT</a></li>

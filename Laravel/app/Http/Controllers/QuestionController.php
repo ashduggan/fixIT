@@ -23,8 +23,24 @@ class QuestionController extends Controller
     public function show($id){
         //POST: shows a specific question
         $question = Question::find($id);
+        $leftChildId = "";
+        $rightChildId = "";
+        if($question->leftChildId == null){
+            $leftChildId = 'support';
+        } else {
+            $leftChildId = '/questions/'.$question->leftChildId;
+        }
+        if($question->rightChildId == null){
+            $rightChildId = 'support';
+        } else {
+            $rightChildId = '/questions/'.$question->rightChildId;
+        }
         if($question != null){
-            return view('question', ["question" => $question]);
+            return view('question', [
+                "question" => $question,
+                "leftChildURL" => $leftChildId,
+                "rightChildURL" => $rightChildId
+                ]);
         }
         else {
             return view('support');
