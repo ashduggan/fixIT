@@ -29,6 +29,30 @@ body {
   top:5px;
 }
 
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #1567df;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin-bottom: 20px;
+}
+
+.button:hover {background-color: #4894ef}
+
+.button:active {
+  background-color: #1567df;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
 p {
    font-family: "HelveticaNeue-Light";
 }
@@ -146,6 +170,18 @@ ul.topnav li.icon {display: none;}
     border: 1px solid black;
     border-radius: 5px;
     width: 150px;
+    height: 150px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+  .questionBox {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 330px;
     height: 150px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }

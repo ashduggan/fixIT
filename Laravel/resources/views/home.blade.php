@@ -21,23 +21,19 @@
         <p class="paraTitle">Please select an option from below for help.</p></center>
 
 
+<a href="{{url('questions/1')}}"> 
+  <div class="box">
+    Diagnose your problem
+  </div>
+</a>
 
-<div class="box">
-          Insert PHP filler for icon and name  
-</div>
-
-<div class="box">
-          Insert PHP filler for icon and name
-</div>
-
-<div class="box">
-          Insert PHP filler for icon and name
-</div>
-
-<div class="box">
-          Insert PHP filler for icon and name
-</div>
-
+@for($i = 0; $i < count($questions); $i++)
+  <a href="{{url($questionURLs[$i])}}">
+    <div class="box">
+      {{$questions[$i]->question}}
+    </div>
+  </a>
+@endfor
 
 
 <div id="footer">

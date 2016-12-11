@@ -21,21 +21,19 @@
 <center><p class="headingfont">How Can We Help You?</p>
         <p class="paraTitle">Please select an option from below for help.</p></center>
 
-
-
-<center><div class="questionBox">
-         <div id="question">
+<div class="questionBox">
+         <h4>
               {{$question->question}}
-         </div>
-         <div id="suggestion">
+         </h4>
+         <h6>
               {{$question->suggestion}}
-         </div>
+         </h6>
 </div><p>
 
 <form action="url" method="get">
   <button class="button" formaction={{url($leftChildURL)}}>Yes</button>
   <button class="button" formaction={{url($rightChildURL)}}>No</button>
-  <button class="button">Question Still Not Answered?</button>
+  <button class="button" formaction={{url('support')}}>Question Still Not Answered?</button>
 </form>
 </center>
 

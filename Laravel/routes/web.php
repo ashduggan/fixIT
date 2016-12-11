@@ -11,8 +11,29 @@
 |
 */
 
+use App\QuestionMaxHeap;
+use App\Question;
+
 Route::get('/', function () {
-    return view('home');
+    $heap = new QuestionMaxHeap();
+    $questions = Question::all();
+    foreach($questions as $question){
+        $heap->insert($question);
+    }
+    $questions = array();
+    $questionURLs = array();
+    for($i = 0; $i < 5; $i++){
+        try{
+            $questions[$i] = $heap->extract();
+        } catch (Exception $e){
+            break;
+        }
+        $questionURLs[$i] = '/questions/'.$questions[$i]->id;
+    }
+    return view('home', [
+        "questions" => $questions,
+        "questionURLs" => $questionURLs
+    ]);
 });
 
 Route::get('/support', function(){
