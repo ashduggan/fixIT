@@ -18,7 +18,7 @@
 </div>
 
 <center><p class="headingfont">How Can We Help You?</p>
-        <p class="paraTitle">Please select an option from below for help.</p></center>
+        <p class="paraTitle">Diagnose your problem or choose a popular question below.</p></center>
 
 
 <a href="{{url('questions/1')}}"> 

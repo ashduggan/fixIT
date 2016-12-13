@@ -14,6 +14,7 @@
 use App\QuestionMaxHeap;
 use App\Question;
 
+//GET routes
 Route::get('/', function () {
     $heap = new QuestionMaxHeap();
     $questions = Question::all();
@@ -46,6 +47,16 @@ Route::get('/about', function(){
 
 Route::get('/submit', function(){
     return view('submit');
+});
+
+//POST routes
+Route::post('/answered/{id}', function($id){
+    $question = Question::find($id);
+    if($question != null){
+        $question->popularity += 1;
+        $question->save();
+    }
+    return redirect('/');
 });
 
 Route::resource("questions" , "QuestionController", ["only" => 

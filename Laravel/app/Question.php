@@ -21,9 +21,4 @@ class Question extends Model
         //POST: returns the right child of this question (which is a question)
         return $this->belongsTo('App\Question', 'rightChildId', 'id');
     }
-
-    public function parent(){
-        //POST: returns the parent of this question (which is a question)
-        return $this->belongsTo('App\Question', 'parentId', 'id');
-    }
 }

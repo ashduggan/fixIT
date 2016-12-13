@@ -17,7 +17,6 @@ class CreateQuestionsTable extends Migration
         Schema::create('questions', function (Blueprint $table) {
             //Columns
             $table->increments('id');
-            $table->unsignedInteger('parentId')->nullable();
             $table->unsignedInteger('leftChildId')->nullable();
             $table->unsignedInteger('rightChildId')->nullable();
             $table->integer('popularity')->default(0);
@@ -26,7 +25,6 @@ class CreateQuestionsTable extends Migration
             $table->timestamps();
 
             //Foreign keys
-            $table->foreign('parentId')->references('id')->on('questions');
             $table->foreign('leftChildId')->references('id')->on('questions');
             $table->foreign('rightChildId')->references('id')->on('questions');
         });

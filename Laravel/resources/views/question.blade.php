@@ -33,7 +33,10 @@
 <form action="url" method="get">
   <button class="button" formaction={{url($leftChildURL)}}>Yes</button>
   <button class="button" formaction={{url($rightChildURL)}}>No</button>
-  <button class="button" formaction={{url('support')}}>Question Still Not Answered?</button>
+</form>
+<form action="url" method="post">
+  <button class="button" formaction={{url($answeredURL)}}>This fixed my problem!</button>
+  {{ csrf_field() }}
 </form>
 </center>
 
@@ -42,7 +45,6 @@
 
 
 <div id="footer">
-
     <p class="footerText">Website Design &copy; Ashley Duggan</p>
     </div>
 

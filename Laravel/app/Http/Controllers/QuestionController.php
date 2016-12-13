@@ -35,11 +35,13 @@ class QuestionController extends Controller
         } else {
             $rightChildId = '/questions/'.$question->rightChildId;
         }
+        $answeredURL = '/answered/'.$question->id;
         if($question != null){
             return view('question', [
                 "question" => $question,
                 "leftChildURL" => $leftChildId,
-                "rightChildURL" => $rightChildId
+                "rightChildURL" => $rightChildId,
+                "answeredURL" => $answeredURL
                 ]);
         }
         else {
